@@ -8,7 +8,10 @@
 // No cambies el nombre de la funcion ni los parametros
 const cambioSigno = (num) => {
   //  Tu respuesta va aqui
+  return num > 0 ? -num : num -= num + num;
 };
+
+console.log(cambioSigno(-18))
 
 // 👇 No modifiques este codigo 🚫
 module.exports = {

@@ -9,7 +9,17 @@ arr=["tengo",90, "años",90, "viviendo", "tengo","en","en","mi","país","país"]
 // No cambies el nombre de la funcion ni los parametros
 const eliminaRepetidos = (arr) => {
   //  Tu respuesta va aqui
+  const nuevoArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (nuevoArr.indexOf(arr[i]) === -1) {
+      nuevoArr.push(arr[i])
+    }
+  }
+  return nuevoArr;
 };
+
+console.log(eliminaRepetidos([1,3,4,1,2,3,4,5] ))
+console.log(eliminaRepetidos(["tengo",90, "años",90, "viviendo", "tengo","en","en","mi","país","país"]  ))
 
 // 👇 No modifiques este codigo 🚫
 module.exports = {

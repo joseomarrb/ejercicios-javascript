@@ -7,7 +7,11 @@ str="HolaMundo" --->9
 // No cambies el nombre de la funcion ni los parametros
 const numCaracteres = (str) => {
   //  Tu respuesta va aqui
+  return str.length
 };
+
+console.log(numCaracteres("Hola Mundo"))
+
 
 // 👇 No modifiques este codigo 🚫
 module.exports = {

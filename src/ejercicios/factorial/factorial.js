@@ -15,8 +15,14 @@ Ejemplo:
 // No cambies el nombre de la funcion ni los parametros
 const factorial = (num) => {
   //  Tu respuesta va aqui
+  let resultado = 1;
+  for (let i = 2; i <= num; i++) {
+     resultado *= i
+  }
+  return resultado
 };
 
+console.log(factorial(6))
 // 👇 No modifiques este codigo 🚫
 module.exports = {
   factorial,
