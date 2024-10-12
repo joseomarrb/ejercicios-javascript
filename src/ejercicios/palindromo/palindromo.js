@@ -9,7 +9,12 @@
 // No cambies el nombre de la funcion ni los parametros
 const palindromo = (str) => {
   //  Tu respuesta va aqui
+  const reverse = str.toLowerCase().replace(/[^a-zA-Z0-9]/g, '').split("").reverse().join("");
+  str = str.toLowerCase().replace(/[^a-zA-Z0-9]/g, '');
+  return str === reverse ? true : false;
 };
+
+console.log(palindromo("JavaScript"))
 
 // 👇 No modifiques este codigo 🚫
 module.exports = { palindromo };

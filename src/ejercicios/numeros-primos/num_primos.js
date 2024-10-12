@@ -14,3 +14,4 @@ const numPrimos = (num) => {
 module.exports = {
   numPrimos,
 };
+0
