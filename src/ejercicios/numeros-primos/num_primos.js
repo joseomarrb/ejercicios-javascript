@@ -8,10 +8,28 @@
 // No cambies el nombre de la funcion ni los parametros
 const numPrimos = (num) => {
   // Tu codigo aquí 👇
+  let arreglo = [];
+
+  for (let i = 2; i <= num ; i++ ) {
+    let esPrimo = true;
+
+    for (let j = 2; j < i; j++) {
+      if (i % j === 0) {
+        esPrimo = false; 
+        break;
+      }
+    }
+
+    if (esPrimo) {
+      arreglo.push(i); 
+    }
+  }
+
+  return arreglo
 };
+console.log(numPrimos(10))
 
 // 👇 No modifiques este codigo 🚫
 module.exports = {
   numPrimos,
 };
-0
